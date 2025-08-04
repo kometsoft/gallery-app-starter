@@ -1,11 +1,16 @@
-@import 'tailwindcss';
+@import "@tabler/core";
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+.border-dashed {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: var(--tblr-border-color);
+    border-radius: var(--tblr-border-radius);
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+.navbar {
+    padding: 1rem 0rem;
+}
+
+.link-preview:hover {
+    cursor: zoom-in;
 }
