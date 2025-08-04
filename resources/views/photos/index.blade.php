@@ -129,10 +129,7 @@
           </div>
           <!-- END IMAGE CARD -->
 
-        </div>
-
-        {{-- <!-- EMPTY CARD -->
-        <div class="row row-cards mt-4">
+          <!-- EMPTY CARD -->
           <div class="col-md-12">
             <div class="empty border-dashed">
               <div class="empty-icon">
@@ -158,8 +155,8 @@
               </div>
             </div>
           </div>
+          <!-- END EMPTY CARD -->
         </div>
-        <!-- END EMPTY CARD --> --}}
 
         <!-- PAGINATION -->
         <div class="mt-4">

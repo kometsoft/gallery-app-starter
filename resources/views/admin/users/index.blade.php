@@ -45,8 +45,8 @@
 
     <div class="page-body">
       <div class="container-xl">
-        <div class="row row-cards mt-4">
-          <div class="col-12">
+        <div class="row row-cards">
+          <div class="col-md-12">
             <!-- TABLE -->
             <div class="card overflow-hidden">
               <div class="table-responsive">
@@ -84,8 +84,8 @@
             <!-- END TABLE -->
           </div>
 
-          {{-- <!-- EMPTY CARD -->
-          <div class="col-12">
+          <!-- EMPTY CARD -->
+          <div class="col-md-12">
             <div class="empty border-dashed">
               <div class="empty-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-user">
@@ -110,7 +110,7 @@
               </div>
             </div>
           </div>
-          <!-- END EMPTY CARD --> --}}
+          <!-- END EMPTY CARD -->
         </div>
 
         <!-- PAGINATION -->
