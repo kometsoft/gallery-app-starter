@@ -16,7 +16,7 @@
             <h2 class="page-title">Users</h2>
             <div class="text-secondary">All users in this application.</div>
           </div>
-          <div class="d-print-none col-auto ms-auto">
+          {{-- <div class="d-print-none col-auto ms-auto">
             <div class="d-flex">
               <div class="me-0">
                 <div class="input-icon">
@@ -29,15 +29,15 @@
                   </span>
                 </div>
               </div>
-              {{-- <a href="#" class="btn btn-primary">
+              <a href="#" class="btn btn-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-2">
                   <path d="M12 5l0 14"></path>
                   <path d="M5 12l14 0"></path>
                 </svg>
                 Add user
-              </a> --}}
+              </a>
             </div>
-          </div>
+          </div> --}}
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
 
     <div class="page-body">
       <div class="container-xl">
-        <div class="row row-cards">
+        <div class="row row-cards mt-4">
           <div class="col-12">
             <!-- TABLE -->
             <div class="card overflow-hidden">
@@ -114,7 +114,7 @@
         </div>
 
         <!-- PAGINATION -->
-        <div class="mt-5">
+        <div class="mt-4">
         </div>
         <!-- END PAGINATION -->
 

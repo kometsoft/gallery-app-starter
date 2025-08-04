@@ -18,7 +18,7 @@
           </div>
           <div class="d-print-none col-auto ms-auto">
             <div class="d-flex">
-              <div class="me-2">
+              {{-- <div class="me-2">
                 <div class="input-icon">
                   <input type="text" value="" class="form-control" placeholder="Search">
                   <span class="input-icon-addon">
@@ -34,7 +34,7 @@
                   <option>All category</option>
                   <option value="1">Nature</option>
                 </select>
-              </div>
+              </div> --}}
               <a href="#" class="btn btn-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -131,8 +131,8 @@
 
         </div>
 
-        {{-- <!-- EMPTY STATE -->
-        <div class="row row-cards">
+        {{-- <!-- EMPTY CARD -->
+        <div class="row row-cards mt-4">
           <div class="col-md-12">
             <div class="empty border-dashed">
               <div class="empty-icon">
@@ -159,10 +159,10 @@
             </div>
           </div>
         </div>
-        <!-- END EMPTY STATE --> --}}
+        <!-- END EMPTY CARD --> --}}
 
         <!-- PAGINATION -->
-        <div class="mt-5">
+        <div class="mt-4">
         </div>
         <!-- END PAGINATION -->
       </div>
