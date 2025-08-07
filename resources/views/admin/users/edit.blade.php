@@ -21,20 +21,10 @@
             </a>
           </div>
           <div class="col">
-            <h2 class="page-title">Editing user "Joe"</h2>
+            <h2 class="page-title">Editing user - Joe</h2>
           </div>
           <div class="d-print-none col-auto ms-auto">
             <div class="d-flex">
-              <button type="submit" form="form-user-delete" class="btn btn-danger me-2" onclick="return confirm('Are you sure you want to delete this user? This action cannot be undone.');">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-trash">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M20 6a1 1 0 0 1 .117 1.993l-.117 .007h-.081l-.919 11a3 3 0 0 1 -2.824 2.995l-.176 .005h-8c-1.598 0 -2.904 -1.249 -2.992 -2.75l-.005 -.167l-.923 -11.083h-.08a1 1 0 0 1 -.117 -1.993l.117 -.007h16z" />
-                  <path d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z" />
-                </svg>
-                Delete
-              </button>
-              <form id="form-user-delete" action="#" method="post" class="d-none">
-              </form>
               <button type="submit" form="form-user-edit" class="btn btn-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle-check">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -60,13 +50,13 @@
                     <div class="row mb-3">
                       <label class="col-3 col-form-label required">Name</label>
                       <div class="col">
-                        <input type="name" class="form-control" placeholder="Joe" readonly>
+                        <input type="name" class="form-control" placeholder="Joe" disabled>
                       </div>
                     </div>
                     <div class="row mb-3">
                       <label class="col-3 col-form-label required">Email</label>
                       <div class="col">
-                        <input type="email" class="form-control" placeholder="joe@example.com" readonly>
+                        <input type="email" class="form-control" placeholder="joe@example.com" disabled>
                       </div>
                     </div>
                     <div class="row mb-3">

@@ -18,23 +18,6 @@
           </div>
           <div class="d-print-none col-auto ms-auto">
             <div class="d-flex">
-              {{-- <div class="me-2">
-                <div class="input-icon">
-                  <input type="text" value="" class="form-control" placeholder="Search">
-                  <span class="input-icon-addon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1">
-                      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
-                      <path d="M21 21l-6 -6"></path>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-              <div class="me-2">
-                <select class="form-select">
-                  <option>All category</option>
-                  <option value="1">Nature</option>
-                </select>
-              </div> --}}
               <a href="#" class="btn btn-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -57,41 +40,30 @@
 
           <!-- IMAGE CARD -->
           <div class="col-md-6">
-            <div class="card">
-              <div class="row g-0">
-                <div class="col-4">
-                  <img src="https://images.unsplash.com/photo-1560131323-29d50e8d1b22?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="rounded-start" style="height: 100%; object-fit: cover;">
+            <div class="card" style="height: 150px;">
+              <div class="row g-0 h-100">
+                <div class="col-4 h-100">
+                  <img src="https://images.unsplash.com/photo-1560131323-29d50e8d1b22?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="rounded-start h-100" style="object-fit: cover; width: 100%;">
                 </div>
                 <div class="col">
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-start">
                       <div class="mb-2">
                         <span class="badge bg-primary text-primary-fg">Nature</span>
-                        <span class="badge bg-green text-green-fg" data-bs-toggle="tooltip" data-bs-placement="top" title="Published">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M5 12l5 5l10 -10" />
-                          </svg>
-                        </span>
+
+                        <svg data-bs-toggle="tooltip" data-bs-placement="top" title="Published" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle-check text-green">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" />
+                        </svg>
 
                         {{-- <!-- STATUS BADGE -->
-                        <span class="badge bg-red text-red-fg" data-bs-toggle="tooltip" data-bs-placement="top" title="Unpublished">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M18 6l-12 12" />
-                            <path d="M6 6l12 12" />
-                          </svg>
-                        </span>
+                        <svg data-bs-toggle="tooltip" data-bs-placement="top" title="Unpublished" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-circle-x text-danger">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-6.489 5.8a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z" />
+                        </svg>
                         <!-- END STATUS BADGE --> --}}
 
                       </div>
-                      {{-- <div class="avatar-list avatar-list-stacked avatar-list-xs pe-2">
-                        <span class="avatar avatar-1" style="background-image: url(https://api.dicebear.com/9.x/thumbs/svg?seed=user1)"> </span>
-                        <span class="avatar avatar-1" style="background-image: url(https://api.dicebear.com/9.x/thumbs/svg?seed=user2)"> </span>
-                        <span class="avatar avatar-1" style="background-image: url(https://api.dicebear.com/9.x/thumbs/svg?seed=user3)"> </span>
-                        <span class="avatar avatar-1" style="background-image: url(https://api.dicebear.com/9.x/thumbs/svg?seed=user4)"> </span>
-                        <span class="avatar avatar-1" style="background-image: url(https://api.dicebear.com/9.x/thumbs/svg?seed=user5)"> </span>
-                      </div> --}}
                     </div>
                     <h3><a href="#">Aerial terrain view from space</a></h3>
                     <div class="row">
@@ -112,13 +84,6 @@
                             </svg>
                             12 Aug 2025
                           </div>
-                          <div class="fs-5 list-item pb-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart icon-inline me-1">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                              <path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" />
-                            </svg>
-                            7
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -133,14 +98,17 @@
           <div class="col-md-12">
             <div class="empty border-dashed">
               <div class="empty-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-photo">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M8.813 11.612c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.986 4.986l.094 .083a1 1 0 0 0 1.403 -1.403l-.083 -.094l-1.292 -1.293l.292 -.293l.106 -.095c.457 -.38 .918 -.38 1.386 .011l.108 .098l4.674 4.675a4 4 0 0 1 -3.775 3.599l-.206 .005h-12a4 4 0 0 1 -3.98 -3.603l6.687 -6.69l.106 -.095zm9.187 -9.612a4 4 0 0 1 3.995 3.8l.005 .2v9.585l-3.293 -3.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-.307 .306l-2.293 -2.292l-.15 -.137c-1.256 -1.095 -2.85 -1.097 -4.096 -.017l-.154 .14l-5.307 5.306v-9.585a4 4 0 0 1 3.8 -3.995l.2 -.005h12zm-2.99 5l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <line x1="9" y1="10" x2="9.01" y2="10"></line>
+                  <line x1="15" y1="10" x2="15.01" y2="10"></line>
+                  <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path>
                 </svg>
               </div>
-              <p class="empty-title">Create your first photo</p>
+              <p class="empty-title">No photo found</p>
               <p class="empty-subtitle text-secondary">
-                This is where your photos will appear. Click below to upload your first one!
+                Click below to upload your photo!
               </p>
               <div class="empty-action">
                 <a href="#" class="btn btn-primary">
@@ -159,8 +127,6 @@
         </div>
 
         <!-- PAGINATION -->
-        <div class="mt-4">
-        </div>
         <!-- END PAGINATION -->
       </div>
     </div>
